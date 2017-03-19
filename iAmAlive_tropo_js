@@ -1,0 +1,12 @@
+tropo outbound call script (.js)
+
+    call(["+1" + numberToDial], 
+        {"callerID": '+18605067444'})
+    say("Hello " + adminName + ", " + msg + "!")
+
+tropo outbound sms script (.js)
+
+    call(numberToDial,{
+       network:"SMS"} );
+    say("Hi " + adminName + ", " + msg + "!");
+
